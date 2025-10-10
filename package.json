@@ -1,0 +1,32 @@
+{
+  "name": "memorabilia",
+  "version": "0.1.0",
+  "description": "a whatever app",
+  "keywords": [
+    "Dgraph",
+    "NestJS",
+    "SvelteKit",
+    "RxJS"
+  ],
+  "homepage": "https://github.com/msyfls123/memorabilia#readme",
+  "bugs": {
+    "url": "https://github.com/msyfls123/memorabilia/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msyfls123/memorabilia.git"
+  },
+  "license": "MIT",
+  "author": "kimi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.907.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
