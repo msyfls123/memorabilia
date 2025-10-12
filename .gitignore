@@ -1,3 +1,10 @@
+# config
 env/aws.local.env
 
+# dependencies
 node_modules/
+
+# build
+build/
+dist/
+.svelte-kit/
