@@ -8,6 +8,9 @@ const config = {
             src: 'src/client',
             appTemplate: 'src/client/app.html',
         },
+        paths: {
+            relative: false
+        }
     }
 };
 
