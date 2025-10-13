@@ -6,7 +6,7 @@ export class SvelteKitHandler implements OnModuleInit {
 
     async onModuleInit() {
         // @ts-ignore
-        const { handler } = await import('../../../build/svelte/handler.js');
+        const { handler } = await import('../../../build/handler.js');
         this.svelteKitHandler = handler;
     }
 

@@ -1,5 +1,5 @@
 import { Module, type OnModuleInit } from '@nestjs/common';
-import { SvelteKitHandler } from './sveltekit.handler';
+import { SvelteKitHandler } from './sveltekit.handler.js';
 
 @Module({
   providers: [SvelteKitHandler],
