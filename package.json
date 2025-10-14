@@ -25,20 +25,22 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:client": "vite dev",
-    "dev:server": "nest start --watch",
+    "dev:client": "cross-env NODE_ENV=development vite dev",
+    "dev:server": "cross-env NODE_ENV=development nest start --watch",
     "build:client": "vite build",
     "build:server": "nest build"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.907.0",
     "@nestjs/common": "^11.1.6",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.1.6",
     "@nestjs/platform-express": "^11.1.6",
     "@nestjs/serve-static": "^5.0.4",
     "@sveltejs/adapter-node": "^5.3.3",
     "@sveltejs/kit": "^2.46.4",
     "@types/express": "^5.0.3",
+    "cross-env": "^10.1.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "extensionless": "^1.9.9",
@@ -51,6 +53,8 @@
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "@swc/cli": "^0.7.8",
     "@swc/core": "^1.13.5",
+    "concurrently": "^9.2.1",
+    "http-proxy-middleware": "^3.0.5",
     "vite": "^7.1.9"
   }
 }

@@ -5,7 +5,7 @@
     }
 </script>
 <main>
-    <h1>hello from svelte </h1>
+    <h1>Hello from Svelte + NestJS</h1>
     <p>counter: {counter}</p>
     <button onclick={increment}>increment</button>
 </main>

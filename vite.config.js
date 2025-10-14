@@ -5,7 +5,13 @@ export default defineConfig({
     build: {
         emptyOutDir: true,
     },
-	plugins: [
+    plugins: [
         sveltekit(),
-    ]
+    ],
+    server: {
+        hmr: {
+            host: 'localhost',
+            port: 5173,
+        }
+    }
 });
