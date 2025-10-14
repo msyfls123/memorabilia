@@ -12,10 +12,10 @@ export class SvelteKitMiddleware implements NestMiddleware {
 
   use(req: Request, res: Response, next: () => void) {
      const isDevelopment = this.configService.get<string>('NODE_END') === 'development'
-     const isSvelteKitRequests = !(req.path.startsWith('/api') || req.baseUrl.startsWith('/_app'))
+     console.log('path', req.path, req.url)
+     const isSvelteKitRequests = !(req.path.startsWith('/api') || req.path.startsWith('/_app'))
 
     if (!isDevelopment && isSvelteKitRequests) {
-      req.url = req.baseUrl;
       return this.svelteKitHandler.getHandler()(req, res, next);
     }
     next();
