@@ -6,6 +6,6 @@
 </script>
 <main>
     <h1>Hello from Svelte + NestJS</h1>
-    <p>counter: {counter}</p>
-    <button onclick={increment}>increment</button>
+    <p>Counter: {counter}</p>
+    <button onclick={increment}>Increment</button>
 </main>

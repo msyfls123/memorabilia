@@ -25,6 +25,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -p \"[{name}]\" -c \"green.bold,magenta.bold\" -n \"CLIENT,SERVER\" \"pnpm run dev:client\" \"pnpm run dev:server\"",
     "dev:client": "cross-env NODE_ENV=development vite dev",
     "dev:server": "cross-env NODE_ENV=development nest start --watch",
     "build:client": "vite build",
